@@ -1,0 +1,54 @@
+Für KategorieIcon abstimmen -> + daneben
+-------ITEMS:
+----Obst:
+Zitrone
+Birne
+Apfel
+Banane
+Kirsche
+Trauben    +
+-TODO: 
+
+----Gemüse:
+Tomate
+Karotte    + 
+-TODO: Salat, Kartoffel,
+
+----Fleisch/Fisch:
+Wurst      +
+Fleisch2
+Fleisch
+Huhn
+Fisch
+-TODO:
+
+----Tierische Produkte:
+Käse
+Ei
+-TODO: Milch,  +
+
+----Getreide Produkte:
+Mehl
+-TODO: Müsli?
+-TODO KategorieIcon: Ähre +
+
+----Backwaren:
+Toast
+Brot           +
+-TODO: Brezel, Weckle,
+
+----Fertiggerichte
+Nudel2
+Nudel1
+Pizza         +
+-TODO:
+
+----Süßes:
+Loli
+Keks
+Eis2
+Eis
+Bonbon       +
+-TODO:
+
+----ALLGEMEIN:
