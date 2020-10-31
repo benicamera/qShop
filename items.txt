@@ -12,7 +12,7 @@ Trauben    +
 ----Gemüse:
 Tomate
 Karotte    ++
-Kartoffel
+NEU: Kartoffel
 -TODO: Salat
 
 ----Fleisch/Fisch:
@@ -26,19 +26,19 @@ Fisch
 ----Tierische Produkte:
 Käse
 Ei
-Milch     ++
+NEU: Milch     ++
 -TODO: 
 
 ----Getreide Produkte:
 Mehl
-Ähre ++
+NEU: Ähre ++
 -TODO: Müsli?
 
 ----Backwaren:
 Toast
 Brot           ++
-Brezel
-Weckle
+NEU: Brezel
+NEU: Weckle
 -TODO:
 
 ----Fertiggerichte
@@ -58,4 +58,5 @@ Bonbon       ++
 ----ALLGEMEIN:
 
 ---OBERFLÄCHE:
-Plus
+NEU: Plus
+-TODO: Einstellungen, Listen (zwei "Karten" hintereinander)
