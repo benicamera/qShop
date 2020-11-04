@@ -3,7 +3,7 @@ Für KategorieIcon abstimmen -> + daneben
 ----Obst:
 Zitrone
 Birne
-Apfel      +
+Apfel      ++
 Banane
 Kirsche
 Trauben    +
@@ -11,12 +11,12 @@ Trauben    +
 
 ----Gemüse:
 Tomate
-Karotte    ++
+Karotte    +++
 NEU: Kartoffel
 -TODO: Salat
 
 ----Fleisch/Fisch:
-Wurst      +
+Wurst      ++
 Fleisch2
 Fleisch    +
 Huhn
@@ -26,17 +26,17 @@ Fisch
 ----Tierische Produkte:
 Käse
 Ei
-NEU: Milch     ++
+NEU: Milch     +++
 -TODO: 
 
 ----Getreide Produkte:
 Mehl
-NEU: Ähre ++
+NEU: Ähre +++
 -TODO: Müsli?
 
 ----Backwaren:
 Toast
-Brot           ++
+Brot           +++
 NEU: Brezel
 NEU: Weckle
 -TODO:
@@ -44,7 +44,7 @@ NEU: Weckle
 ----Fertiggerichte
 Nudel2
 Nudel1        +
-Pizza         +
+Pizza         ++
 -TODO:
 
 ----Süßes:
@@ -52,7 +52,7 @@ Loli
 Keks
 Eis2
 Eis
-Bonbon       ++
+Bonbon       +++
 -TODO:
 
 --TODO:
