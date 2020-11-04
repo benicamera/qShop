@@ -1,13 +1,13 @@
-
-[
   {
-    "name":"Apfel",
-    "id":1234
-  },
-  {
-  "name":"Milch",
-  "id":4321
+    "Obst":["Apfel","Birne","Banane","Kirsche","Trauben","Zitrone"],
+    "Gemüse":["Tomate","Karotte","Kartoffel","Salat"],
+    "Fleisch":["Lyoner","Salami","Schinken","Leberwurst","Hühnerbrust","Hänchenkeule","Putenfilet","Schweinskotlet"],
+    "Fisch":["Lachs","Forelle"],
+    "Milch":["Milch","Joghurt","Sahne"],
+    "Käse":["Emmentaler","Gouda","Bergkäse"],
+    "Ei":["Eier","Ostereier"],
+    "Backwaren":["Roggenbrot","Brötchen","Kartoffelbrot","Vollkornbrot","Vollkorntoast","Toast","Laugenstange","Brezel","Baguette","Croissant"],
+    "Nudeln":["Spaghetti","Fussili"]    
   }
-  
-]
+
 
