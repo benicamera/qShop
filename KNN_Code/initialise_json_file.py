@@ -23,3 +23,7 @@ def initialize_json_file(objects):
 
     with open('data.json', 'w') as outfile:
         json.dump(data, outfile, indent=4)
+
+        
+if __name__ == '__main__':
+    initialize_json_file(["tomate", "apfel", "birne", "mango"])        
