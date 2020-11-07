@@ -69,3 +69,10 @@ def learn_and_predict(list_objects):
             output.insert(0, o)
 
     return output
+
+
+if __name__ == '__main__':
+    objekte = ["apfel", "karotte", "birne", "tomate", "mango"]
+
+    p = learn_and_predict(objekte)
+    print(p)
