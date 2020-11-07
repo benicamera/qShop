@@ -70,3 +70,11 @@ def data_read_positive(object):
         training_data.append((a, 1))                    # (Erzueugt nur postivi-Beispiele)
 
     return training_data
+
+
+if __name__ == '__main__':
+    p = data_read_positive('tomate')
+    print(p)
+
+    o = data_read_negative('tomate')
+    print(o)
