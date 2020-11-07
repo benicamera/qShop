@@ -13,19 +13,10 @@
 #                   gekauft wird.
 #
 from data_read import data_read_positive, data_read_negative, data_read_to_predict
+from bubble_sort_hussein import bubblesort
 import KNN
 from numpy import random
 import numpy as np
-
-
-def bubblesort(arr, items):
-    n = len(arr)
-
-    for i in range(n - 1):
-        for j in range(0, n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-                items[j], items[j + 1] = items[j + 1], items[j]
 
 
 def get_training_data(object):
@@ -78,10 +69,3 @@ def learn_and_predict(list_objects):
             output.insert(0, o)
 
     return output
-
-
-# TODO: wenn fertig, die unten stehenden Zeilen löschen
-objekte = ["apfel", "karotte", "birne", "tomate", "mango"]
-
-p = learn_and_predict(objekte)
-print(p)
