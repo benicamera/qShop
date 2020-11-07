@@ -82,3 +82,15 @@ def data_write_negative():
     if do_it:                   # nur wenn mindestens eine Änderung vogenommen wurde
         with open('data.json', 'w') as json_file:
             json.dump(data, json_file, indent=4)
+
+            
+if __name__ == '__main__':
+    liste = ["apfel", "karotte", "tomate"]
+    # data_write_positive('tomate')
+    for i in range(11):
+        for o in liste:
+            data_write_positive(o)
+        r = random.randint(1, 4)  # in sekunden
+        time.sleep(r)
+        data_write_negative()
+        time.sleep(5 - r)            
