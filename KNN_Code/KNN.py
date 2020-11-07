@@ -151,3 +151,46 @@ class MLP:
         plt.xlabel("iterations")
         plt.ylabel("Fehler")
         plt.savefig('Plot_MLP.pdf')
+
+        
+if __name__ == '__main__':
+    data_in = [
+        (np.array([1, 0, 0, 0, 0]), 0),
+        (np.array([1, 0, 1, 0, 1]), 0),
+        (np.array([1, 1, 0, 1, 0]), 1),
+        (np.array([1, 0, 1, 0, 1]), 0),
+        (np.array([1, 1, 0, 1, 0]), 1),
+        (np.array([1, 0, 1, 0, 1]), 1),
+        (np.array([1, 1, 0, 1, 1]), 1),
+        (np.array([1, 0, 1, 1, 1]), 1)
+    ]
+
+    knn = MLP(eta=0.03, iterations=30000)
+
+    knn.fit(data_in)
+
+    knn.plot()
+
+    kepp = True
+    while kepp:
+        s = None
+        while True:
+            s = input("Input(erster Wert muss 1 sein)(für Stop (S)): ")
+            if s == "S" or s == "s":
+                kepp = False
+            s = list(s)
+            try:
+                for i in range(len(s)):
+                    s[i] = int(s[i])
+                break
+            except ValueError:
+                if kepp:
+                    print("nochmal")
+                else:
+                    break
+
+        if s[0] != "S" and s[0] != "s":
+            t = np.array(s)
+            erg = knn.predict(t)
+            print("Ergebnis:", erg)
+        
