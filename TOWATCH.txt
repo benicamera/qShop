@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/54444538/how-do-i-run-test-my-flutter-app-on-a-real-device
