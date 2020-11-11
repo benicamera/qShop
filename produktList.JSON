@@ -1,7 +1,28 @@
   {
-    "Obst":["Apfel","Birne","Banane","Kirsche","Trauben","Zitrone"],
-    "Gemüse":["Tomate","Karotte","Kartoffel","Salat"],
-    "Fleisch":["Lyoner","Salami","Schinken","Leberwurst","Hühnerbrust","Hänchenkeule","Putenfilet","Schweinskotlet"],
+    "Obst":[
+            {"name":"Apfel","icon":"0xe918"},
+            {"name":"Birne","icon":"0xe917"},
+            {"name":"Banane","icon":"0xe919"},
+            {"name":"Kirsche","icon":"0xe908"},
+            {"name":"Trauben","icon":"0xe904"},
+            {"name":"Zitrone","icon":"0xe900"},
+            ],
+    "Gemüse":[
+              {"name":"Tomate","icon":"0xe902"},
+              {"name":"Karotte","icon":"0xe90d"},
+              {"name":"Kartoffel","icon":"?"},
+              {"name":"Salat","icon":"?"}
+            ],
+    "Fleisch":[
+                {"name":"Lyoner","icon":"0xe901"},
+                {"name":"Salami","icon":"0xe901"},
+                {"name":"Schinken","icon":"0xe90e"},
+                {"name":"Leberwurst","icon":"0xe901"},
+                {"name":"Hühnerbrust","icon":"?"},
+                {"name":"Hänchenkeule","icon":"0xe90e"},
+                {"name":"Putenfilet","icon":"?"},
+                {"name":"Schweinskotelett","icon":"?"}
+                 ],
     "Fisch":["Lachs","Forelle"],
     "Milch":["Milch","Joghurt","Sahne"],
     "Käse":["Emmentaler","Gouda","Bergkäse"],
