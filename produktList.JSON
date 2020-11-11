@@ -1,7 +1,7 @@
   {
-    "Obst":["Apfel":"apfel","Birne":"birne","Banane":"banane","Kirsche":"kirsche","Trauben":"trauben","Zitrone":"zitrone"],
-    "Gemüse":["Tomate":"tomate","Karotte":"karotte","Kartoffel":"kartoffel","Salat":"karotte"],
-    "Fleisch":["Lyoner":"wurst","Salami":"wurst","Schinken":"wurst","Leberwurst":"wurst","Hühnerbrust":"huhn","Hänchenkeule","Putenfilet","Schweinskotlet"],
+    "Obst":["Apfel","Birne","Banane","Kirsche","Trauben","Zitrone"],
+    "Gemüse":["Tomate","Karotte","Kartoffel","Salat"],
+    "Fleisch":["Lyoner","Salami","Schinken","Leberwurst","Hühnerbrust","Hänchenkeule","Putenfilet","Schweinskotlet"],
     "Fisch":["Lachs","Forelle"],
     "Milch":["Milch","Joghurt","Sahne"],
     "Käse":["Emmentaler","Gouda","Bergkäse"],
