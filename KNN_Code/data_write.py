@@ -25,8 +25,8 @@ from numpy import random
 def get_time():
     ticks_ep = time.time()  # Sekunden seit dem 1.1.1970
     ticks_ep /= (60 * 60 * 24)  # Umrechenen in Tage
-    ticks_ep = int(ticks_ep)
     ticks_c = ticks_ep - (50 * 365 + 12)  # Umrechnen in Tage seit dem 1.1.2020 (+12 wegen Schaltjahren)
+    ticks_c = int(ticks_c)
     return ticks_c
 
 
