@@ -63,4 +63,6 @@ Bonbon       +++
 
 ---OBERFLÄCHE:
 NEU: Plus
--TODO: Einstellungen, Listen (zwei "Karten" hintereinander)
+     Einstellungen
+     Listen (zwei "Karten" hintereinander)
+-TODO:
