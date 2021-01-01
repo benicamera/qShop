@@ -2,7 +2,7 @@ Call:
     http://127.0.0.1:5000/api?Query=[query]
     
 call for the first time (json dings):
-    Query=0001
+    Query=0001 [all standard itemnames divided by ',']
 
 write_postive:
     Query=0002 [itemname]
