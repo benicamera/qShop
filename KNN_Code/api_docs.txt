@@ -1,0 +1,14 @@
+Call:
+    http://127.0.0.1:5000/api?Query=[query]
+    
+call for the first time (json dings):
+    Query=0001
+
+write_postive:
+    Query=0002 [itemname]
+
+write_negative:
+    Query=0003
+
+get_prediction:
+    Query=0004 [all itemnames divided by ',']
