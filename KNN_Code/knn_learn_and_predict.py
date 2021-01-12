@@ -12,6 +12,8 @@
 #                   vorgeschlagen werden sollen. Dabei ist das erste Item in der Liste das, das am wahrscheinlichsten
 #                   gekauft wird.
 #
+import json
+
 from data_read import data_read_positive, data_read_negative, data_read_to_predict
 from bubble_sort_hussein import bubblesort
 import KNN
@@ -19,10 +21,10 @@ from numpy import random
 import numpy as np
 
 
-def get_training_data(object):
+def get_training_data(object, _json):
     training_data = []
-    pos_examples = data_read_positive(object)
-    neg_examples = data_read_negative(object)
+    pos_examples = data_read_positive(object, _json)
+    neg_examples = data_read_negative(object, _json)
 
     while len(neg_examples) > len(pos_examples):
         del neg_examples[random.randint(0, len(neg_examples))]
@@ -33,7 +35,9 @@ def get_training_data(object):
     return training_data
 
 
-def learn_and_predict(list_objects):
+def learn_and_predict(objectStringJson):
+    data = json.loads(objectStringJson)
+    list_objects = data.keys()
     prediction_output = []
     item_list_output = []
     for object in list_objects:
