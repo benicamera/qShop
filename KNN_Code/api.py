@@ -2,6 +2,8 @@
 #
 # Verbindung zwischen Frontend und Backend
 #
+import json
+
 from flask import Flask, request, jsonify
 
 import initialise_json_file as init_json
@@ -17,14 +19,12 @@ app = Flask(__name__)
 def hello_world():
     # 'Query':
     # http://127.0.0.1:5000/api?Query=hello world
-    # Query = str(request.args['Query'])
-    # return Query
-    # gibt 'hello world' zurück
     Query = str(request.args['Query'])
+    print("Print", Query)
+    #JSON
     recived = query(Query)
     # Flutter kann nur JSON lesen
-    d = {}
-    d['Query'] = recived
+    d = {'Query': recived}
     return jsonify(d)
 
 
@@ -32,30 +32,31 @@ def hello_world():
 # 200 - "OK"
 # 400 - "Bad Request" (Argumentfehler)
 # 404 - "Not found" (falscher Befehl)
-# 500 - "Server Error" (fehler im Python-script)
+# 500 - "Server Error" (Fehler im Python-script)
 def query(_query):
     try:
         Query = _query
-        if Query.split(" ")[0] == '0001':
-            #TODO: Alle Standard Produkte. Kommt entweder von Flutter oder wird hier irgendwo initialisiert
-            init_json.initialize_json_file('Apfel')
-            return '200'
-
         if Query.split(" ")[0] == '0002':
             if len(Query.split(" ")) == 1:
-                return '400'
+                return {'Code': '400', 'Query': []}
 
-            data_write.data_write_positive(item_name_from_query(Query))
-            return '200'
+            newJson = data_write.data_write_positive(item_name_from_query(Query), jsonStringFromQueryWName(Query))
+            return {'Code': '200', 'Query': json.loads(newJson)}
 
         if Query.split(" ")[0] == '0003':
-            data_write.data_write_negative()
-            return '200'
+            if len(Query.split(" ")) == 1:
+                return {'Code': '400', 'Query': []}
+
+            newJson = data_write.data_write_negative(item_name_from_query(Query), jsonStringFromQueryWName(Query))
+            return {'Code': '200', 'Query': json.loads(newJson)}
 
         if Query.split(" ")[0] == '0004':
-            return prdct.learn_and_predict(pred_list("".join(Query.split(" ")[1:])))
+            if len(Query.split(" ")) == 0:
+                return {'Code': '400', 'Query': []}
+            return {'Code': '200', 'Query': prdct.learn_and_predict(Query)}
 
-        return '404'
+        return {'Code': '404', 'Query': []}
+
     except:
         return '500'
 
@@ -64,9 +65,14 @@ def pred_list(item_string):
     return item_string.split(",")
 
 
+def jsonStringFromQueryWName(query):
+    return "".join(query.split(" ")[2:])
+
+
 def item_name_from_query(_query):
-    return "".join(_query.split(" ")[1:])
+    return "".join(_query.split(" ")[1])
 
 
 if __name__ == '__main__':
     app.run()
+
